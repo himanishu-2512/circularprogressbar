@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(215, 215, 243);
+    height:50vh;
+    width:50vw;
+    margin:40px;
+    display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.details{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+#number,#color{
+    width:300px;
+    height:20px;
+    padding:10px;
+    margin: 10px;
+    font-size: 20px;
+}
+.outer{
+    background-color:white;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.2), 
+              -5px -5px 5px rgba(0,0,0,0.2)
+             ;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    position: relative;
+   
+}
+.inner{
+    background-color: rgb(215, 215, 243);
+    
+    height:160px;
+    width:160px;
+    border-radius:50%;
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+.value1{
+    position: absolute;
+    top:46%;
+    text-align: center;
+width:100%;
+font-size: 20px;
+}
+a{
+    text-decoration: none;
+    padding:10px;
+    background-color:black;
+    color: white;
+    border-radius: 4px;
+}
+    </style>
+</head>
+<body>
+    <div class="details">
+        <label for="number">Enter number</label>
+        <input type="number" name="number" id="number" placeholder="percentage">
+        <label for="number">Enter color</label>
+        <input  name="number" id="color" placeholder="color">
+        <a href="#" class="submit">click</a>
+    </div>
+<div class="container">
+    <div class="outer">
+        <div class="inner">
+<div class="value1">0</div>
+    </div></div>
+</div>
+<script src="./progresscircular.js">
+   
+
+</script>
+</body>
+</html>
